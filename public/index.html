@@ -64,7 +64,7 @@
         console.log("env = " + env.REACT_APP_CLIENT_KEY);
         const connection = new jsforce.Connection({
           // Set your jsForce configuration here
-          accessToken: "00DF9000002wwEn!AQMAQFYQ9NWJdDdxzf113lU6zzaeFafDGD4VSPBRDhTnxnvlLWvkJhnOIqnIAHQDjDMwarw4K4wYcoC10bpIJP6YxwLX.bsU",
+          accessToken: env.REACT_APP_CLIENT_KEY,
           instanceUrl: "https://ampsuperannuationnzltd.my.salesforce.com",
         });
 
