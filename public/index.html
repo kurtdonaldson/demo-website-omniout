@@ -25,6 +25,19 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link rel="shortcut icon" href="/vlocityresources/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="/slds/assets/styles/salesforce-lightning-design-system.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/vlocityresources/slds/styles/OmniLwcUtilsCss.css"
+    />
+    <script src="/vlocityresources/javascript/VlocityPdf.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.9.1/jsforce.min.js"></script>
+    <script defer="defer" src="/app-4975872bc3985b782265.js"></script>
+    <script id="react-dotenv" src="./env.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +52,62 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script defer="defer">
+      /**
+       * A sample connection that uses jsForce to request data from the backend.
+       * This sample connection is for demo purposes and can be used to test
+       * the OmniOut LWC project locally. This connection sample is not intended
+       * to be used as production connection code.
+       **/
+
+      function JSForceConnectionExample() {
+        const connection = new jsforce.Connection({
+          // Set your jsForce configuration here
+          accessToken: env.REACT_APP_CLIENT_KEY,
+          instanceUrl: env.REACT_APP_INSTANCE_URL,
+        });
+
+        /**
+         * Expose the request method
+         **/
+        this.request = request;
+
+        /**
+         * @type {string} The namespace of the package
+         **/
+        this.namespace = "omnistudio";
+
+        /**
+         * Instance Url for salesforce connection
+         **/
+        this.instanceUrl = connection.instanceUrl;
+
+        /**
+         * Uncomment ONLY if your integration user is a community user (not a platform user).
+         * Use the NetworkId where the community user belongs to.
+         * For example:
+         *    SELECT Id from Network where DeveloperName = 'THE_NAME_OF_THE_COMMUNITY'
+         **/
+        // this.networkId = '';
+
+        /**
+         * A function that executes the HTTP requests.
+         * @type {string} The target URL.
+         * @type {Object} The data that will be sent to the target URL.
+         **/
+        function request(url, data) {
+          return connection.requestPost(url, data);
+        }
+      }
+
+      /**
+       * Once the component is ready, an event is dispatched to let the DOM knows that a connection is expected.
+       **/
+      document.addEventListener("omnioutcomponentready", (evt) => {
+        if (evt.detail && evt.detail.omnioutcomponent) {
+          evt.srcElement.connection = new JSForceConnectionExample();
+        }
+      });
+    </script>
   </body>
 </html>
