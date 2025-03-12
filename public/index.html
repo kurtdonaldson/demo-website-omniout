@@ -63,7 +63,7 @@
       function JSForceConnectionExample() {
         const connection = new jsforce.Connection({
           // Set your jsForce configuration here
-          accessToken: env.REACT_APP_CLIENT_KEY,
+          accessToken: process.env.REACT_APP_CLIENT_KEY,
           instanceUrl: "https://ampsuperannuationnzltd.my.salesforce.com",
         });
 
