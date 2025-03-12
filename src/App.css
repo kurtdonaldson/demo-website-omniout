@@ -2,8 +2,22 @@
   text-align: center;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: stretch;
   flex-direction: column;
 }
 
+.demo-header{
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(177, 252, 187);
+}
+
+.demo-header h1{
+  font-size: 30px;
+}
+
+.omniscript-container{
+  margin: 120px 200px;
+}
