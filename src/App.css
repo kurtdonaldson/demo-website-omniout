@@ -4,6 +4,8 @@
   display: flex;
   justify-content: stretch;
   flex-direction: column;
+  background-color: #2A3055;
+  /* background-color: #2A3055; */
 }
 
 .demo-header{
@@ -11,13 +13,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(177, 252, 187);
+  /* background-color: #A7BEF2; */
+  background-color: #A7BEF2;
+  border-bottom: 3px solid white;
 }
 
 .demo-header h1{
-  font-size: 30px;
+  font-size: 45px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
 }
 
 .omniscript-container{
-  margin: 120px 200px;
+  margin: 140px 200px;
 }
