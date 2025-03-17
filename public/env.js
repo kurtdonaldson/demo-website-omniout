@@ -3,7 +3,7 @@ window.env = {
   "ADAPTIVACLIENT": "C:\\Program Files\\Adaptiva\\AdaptivaClient",
   "ALLUSERSPROFILE": "C:\\ProgramData",
   "APPDATA": "C:\\Users\\kdonal01\\AppData\\Roaming",
-  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_384440_FIVWWAADSMYKAYXD",
+  "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_289652_FXXLPZESQIIPLKVP",
   "COLOR": "1",
   "COLORTERM": "truecolor",
   "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
@@ -97,7 +97,7 @@ window.env = {
   "TEMP": "C:\\Users\\kdonal01\\AppData\\Local\\Temp",
   "TERM": "xterm-256color",
   "TERM_PROGRAM": "vscode",
-  "TERM_PROGRAM_VERSION": "1.98.1",
+  "TERM_PROGRAM_VERSION": "1.98.2",
   "TMP": "C:\\Users\\kdonal01\\AppData\\Local\\Temp",
   "TMPDIR": "C:\\Users\\kdonal01\\AppData\\Local\\Temp",
   "UATDATA": "C:\\WINDOWS\\CCM\\UATData\\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77",
@@ -112,5 +112,6 @@ window.env = {
   "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-a24a373656-sock",
   "WINDIR": "C:\\WINDOWS",
   "ZES_ENABLE_SYSMAN": "1",
-  "_": "C:/Program Files/nodejs/node.exe"
+  "_": "C:/Program Files/nodejs/node.exe",
+  "__COMPAT_LAYER": "DetectorsAppHealth"
 };
