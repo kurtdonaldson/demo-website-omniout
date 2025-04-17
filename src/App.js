@@ -8,7 +8,7 @@ function App() {
           <h1>Spring '25 Release OmniOut Demo</h1>
       </div>
       <div className='omniscript-container'>
-          <vlocityomniscript-team-create-case-english run-mode="localScriptDef"></vlocityomniscript-team-create-case-english>
+          <vlocityomniscript-sample-create-case-english run-mode="localScriptDef"></vlocityomniscript-sample-create-case-english>
       </div>
     </div>
   );
